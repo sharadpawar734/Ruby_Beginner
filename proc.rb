@@ -19,17 +19,21 @@
 # puts "Even number in List 1: #{even_number_1}"
 # puts "Even number in list 2: #{even_number_2}"
 
-puts "\n\n"
+# puts "\n\n"
 
-cube = Proc.new { |x| x ** 3 }
-print {1, 2, 3}.collect!(&cube)
-puts "\n"
-print[4,5,6].map!(&cube)
+# cube = Proc.new { |x| x ** 3 }
+# print {1, 2, 3}.collect!(&cube)
+# puts "\n"
+# print[4,5,6].map!(&cube)
 
-puts "\n\n"
+# puts "\n\n"
 
-hello = Proc.new do
-  puts 'Hello Sharad'
-end
+# hello = Proc.new do
+#   puts 'Hello Sharad'
+# end
 
- hello.call
+#  hello.call
+
+number_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+string_array = number_array.map(&:to_s)
+print string_array   #convert into string
